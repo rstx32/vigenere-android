@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="370dp"
+        tools:layout_editor_absoluteY="209dp">
+
+        <TextView
+            android:id="@+id/enkripsi_textView_keterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enkripsi"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/enkripsi_textView_tulisPesan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Tulis Pesan"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/enkripsi_editText_tulisPesan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="..."
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/enkripsi_textView_masukanKunci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Masukan Kunci :"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/enkripsi_editText_masukanKunci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="..."
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/enkripsi_buttonEnkripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ENKRIPSI"
+            android:onClick="enkripsi_enkripsi"/>
+
+        <TextView
+            android:id="@+id/enkripsi_textView_hasilEnkripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Hasil Enkripsi"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/enkripsi_editText_hasilEnkripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="..."
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/enkripsi_textView_nomorHP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomor HP :"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/enkripsi_editText_noHP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="..."
+            android:inputType="phone"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/enkripsi_buttonKirimSms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="enkripsi_kirimSms"
+            android:text="Kirim Via SMS" />
+
+        <Button
+            android:id="@+id/enkripsi_buttonKirimWa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="enkripsi_kirimWa"
+            android:text="Kirim via WhatsApp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
