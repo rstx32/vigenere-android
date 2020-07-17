@@ -1,6 +1,7 @@
 package com.example.vigenere;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
@@ -120,7 +121,8 @@ public class MainActivity extends AppCompatActivity{
                 kirimWa.setEnabled(true);
             }
             Vigenere v = new Vigenere(plain,null,key);
-            hasil.setText(v.getCipher());
+            Kreatif k = new Kreatif(v.getCipher(),null,key);
+            hasil.setText(k.getCipher());
         }catch (Exception ex){
             Toast.makeText(MainActivity.this, String.valueOf(ex), Toast.LENGTH_SHORT).show();
         }
